@@ -7,12 +7,12 @@
     <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-<link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
  <header><div class="navbar bg-emerald-950 shadow-sm">
-  <div class="navbar-start">
+  <div class="navbar-start ">
     <div class="dropdown">
       <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
@@ -26,7 +26,7 @@
         <li><a>Plant a tree</a></li>
       </ul>
     </div>
-    <a class="btn btn-ghost text-xl text-fuchsia-50">Green Earth</a>
+    <a class="ml-[120px] btn-ghost text-xl text-fuchsia-50">Green Earth</a>
   </div>
   <div class="navbar-center hidden lg:flex text-slate-100">
     <ul class="menu menu-horizontal px-1">
@@ -37,7 +37,7 @@
     </ul>
   </div>
   <div class="navbar-end">
-    <a class="btn bg-amber-300 text-slate-100">Plant a tree </a>
+    <a class="btn bg-amber-300 text-slate-100 mr-[120px] rounded-full">Plant a tree </a>
   </div>
 </div>
 </header>
@@ -46,10 +46,10 @@
     <Img src="./assets/hero-leaf1.png">
   </div>
   <div>
-    <h2 class="mt-11 text-3xl font-bold">Plant A Tree,Grow A Future</h2>
-    <p>Join our mission to plant 1 million trees and make the Earth greener for future
+    <h2 class="mt-11 text-[40px] font-bold text-center">Plant A Tree,Grow A Future</h2>
+    <p class="text-center">Join our mission to plant 1 million trees and make the Earth greener for future
       generations.</p>
-      <button class="btn btn-warning mt-4">Get Envolved</button>
+      <button class="btn btn-warning mt-5 ml-[210px] rounded-full">Get Involved</button>
   </div>
   <div>
     <img src="./assets/hero-leaf2.png">
@@ -68,7 +68,8 @@
       </aside>
       <!-- Products Grid -->
       <main class="flex-1">
-        <div id="products-grid" class="grid grid-cols-1 md:grid-cols-3 gap-7">
+        <div id="products-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-7">
+
           <div class="card bg-base-100 w-full shadow-sm">
             <figure>
               <img
@@ -149,6 +150,14 @@
     </div>
   </div>
 </section>
+<!-- plant modal -->
+<!-- Plant Modal -->
+<div id="plant-modal" class="modal">
+  <h2 id="modal-title"></h2>
+  <p><strong>Category:</strong> <span id="modal-category"></span></p>
+  <p id="modal-description"></p>
+</div>
+
 <section class="bg-[#156e3f] py-16">
   <div class="max-w-md mx-auto bg-green-500 bg-opacity-10 rounded-xl shadow-lg p-8">
     <h2 class="text-2xl text-blue-200 font-bold text-center mb-8">Plant a Tree Today</h2>
